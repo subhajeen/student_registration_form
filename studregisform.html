@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style type="text/css">
+        h3{font-family: Calibri; font-size: 22pt; font-style: normal; font-weight:bold; color:slateblue;
+            text-align: center; text-decoration: underline}
+        table{font-family: Calibri; color: white; font-size: 11pt; font-style: normal;
+        text-align: left; background-color: slateblue; border-collapse: collapse; border: 2px solid navy}
+        table.inner{border: 0px}
+    </style>
+</head>
+<body>
+    <h3>STUDENT APPLICATION FORM</h3>
+    <form action="form.js" method="=post">
+        <table align="center" cellpadding="10">
+            <!-------First Name------------------------------------------------------------------------------->
+            <tr>
+                <td>FIRST NAME</td>
+                <TD><input type="text" name="First_Name" maxlength="30"/>
+                    (max 30 charcters a-z and A-Z)
+                </TD>
+            </tr>
+            <!-------Last Name------------------------------------------------------------------------------->
+            <tr>
+                <td>LAST NAME</td>
+                <TD><input type="text" name="Last_Name" maxlength="30"/>
+                    (max 30 charcters a-z and A-Z)
+                </TD>
+            </tr>
+            <!-------Date Of Birth------------------------------------------------------------------------------->
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                    <select name="Birth_day" id="Birth_day">
+                        <option value="-1">Day</option>
+                        <option value="=1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                    </select>
+                    <select name="Birthday_Month" id="Birthday_Month">
+                        <option value="-1">Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="Birthdat_Year" id="Birthday_Year">
+                        <option value="-1">Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+
+                    </select>
+                </td>
+                <!-------Email Id------------------------------------------------------------------------------->
+            <tr>
+                <td>EMAIL</td>
+                <TD><input type="text" name="Email_Id" maxlength="100"/>
+                </TD>
+            </tr>
+                <!-------Mobile Number------------------------------------------------------------------------------->
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <TD><input type="text" name="Mobile_Number" maxlength="10"/>
+                    (10 digit number)
+                </TD>
+            </tr>
+                <!-------Gender------------------------------------------------------------------------------->
+            <tr>
+                <td>GENDER</td>
+                <TD>
+                    Male<input type="radio" name="Gender" value="Male"/>
+                    Female<input type="radio" name="gender" value="Female">
+                    Others<input type="radio" name="gender" value="Others">
+                    
+                </TD>
+            </tr>
+                <!-------Address------------------------------------------------------------------------------->
+                <tr>
+                    <td>ADDRESS</td>
+                    <TD><textarea name="Address" rows="4" cols="30"></textarea></TD>
+                </tr>
+                <!-------City------------------------------------------------------------------------------->
+                <tr>
+                    <td>CITY</td>
+                    <td><input type="text" name="city" maxlength="30"/>
+                    (max 30 characters a-z and A-Z)
+                </td>
+                </tr>
+               <!-------Pincode------------------------------------------------------------------------------->
+                <tr>
+                    <td>PINCODE</td> 
+                
+               <td><input type="text name="pincode" maxlength="6"/>
+                (6 digit number)
+                </td>
+                </tr>
+                <tr>
+                    <td>STATE</td>
+                    <TD><input type= "text" name="state" maxlength="30">
+                    (max 30 characters a-z and A-Z)
+                </TD>
+                </tr>   
+                <tr>
+                    <td>COUNTRY</td>
+                    <TD><input type="text" name="country" value="India" readonly="readonly"/>
+                    </TD>
+                </tr>
+                <tr>
+                    <td>HOBBIES</td>
+                    <td>Drawing
+                        <input type="checkbox" name =hobby_drawig value="Drawing"/>
+                        Singing
+                        <input type="checkbox" name="hobby_singing" value="Singing"/>
+                        Cooking
+                        <input type="checkbox" name="hobby_cooking" value="Cooking"/>
+                        Gardening
+                        <input type="checkbox" name="hobby_Gardening" value="gardening"/>
+                        Others
+                        <input type="checkbox" name="hobby_others" value="Others">
+                        <input type="text" name="hobby_others" maxlength="30"/>
+                        </td>
+                </tr>
+                 <!-------Pincode------------------------------------------------------------------------------->
+                <tr>
+                    <td>QUALIFICATION</td>
+                    <TD>
+                        
+    <table class="my-table" border="1" width="50% " cellpadding="15%" cellspacing="15">
+        <tr>
+            <th>SI.No</th>
+            <th>University or school</th>
+            <th>Year of Passing</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>C.S.V.V.Hr.Sec.School Irenipuram</td>
+            <td>
+                HSC
+            </td>
+            <td colspan="2">2016-2018 80%</td>
+            
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>C.S.V.V.Hr.Sec.School Irenipuram</td>
+            <td>2013</td>
+            <td>86%</td>
+        </tr>
+        <tr>
+            <td>BE</td>
+            <td>Einstein College of Engg</td>
+            <td>2018-2022</td>
+            <td class="special special1 special2">75%</td>
+        </tr>
+        </table><br>
+        <button>SUBMIT</button>
+                       
+                    </TD>
+                    </tr> 
+                 
+
+
+        </table>
+    </form>
+
+   
+    </table>
+    <p></p>
+</body>
+</html>
